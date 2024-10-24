@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Personal Portfolio
 
 Welcome to my **Personal Portfolio** website, built using **React** and **Tailwind CSS**. This portfolio showcases my web development skills, experience, and projects. It includes a clean and modern design, interactive features, and is fully responsive across all devices.
@@ -49,3 +50,6 @@ Ensure you have the following installed:
 ## 📄 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.[MIT License](LICENSE)
+=======
+# Personal-Portfolio
+>>>>>>> c5f287b (Initial commit)
