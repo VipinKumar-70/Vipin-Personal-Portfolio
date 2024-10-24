@@ -24,20 +24,6 @@ Welcome to my **Personal Portfolio** website, built using **React** and **Tailwi
 
 ![Portfolio Screenshot](link-to-your-screenshot) <!-- Replace with actual image link -->
 
-## 💻 Project Structure
-'''plaintext
-├── public
-│ └── index.html # Entry point HTML file
-├── src
-│ ├── assets # Images, logos, and other assets
-│ ├── components # Reusable components (e.g., Navbar, Footer)
-│ ├── pages # Individual pages (e.g., About, Projects)
-│ └── main.jsx # Main React entry file
-├── tailwind.config.js # Tailwind CSS configuration
-├── vite.config.js # Vite configuration
-└── package.json # Project dependencies and scripts
-'''
-
 ## 🔧 Installation Instructions
 
 To run the project locally on your machine, follow these steps:
