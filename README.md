@@ -25,7 +25,7 @@ Welcome to my **Personal Portfolio** website, built using **React** and **Tailwi
 ![Portfolio Screenshot](link-to-your-screenshot) <!-- Replace with actual image link -->
 
 ## 💻 Project Structure
-
+'''plaintext
 ├── public
 │ └── index.html # Entry point HTML file
 ├── src
@@ -36,6 +36,7 @@ Welcome to my **Personal Portfolio** website, built using **React** and **Tailwi
 ├── tailwind.config.js # Tailwind CSS configuration
 ├── vite.config.js # Vite configuration
 └── package.json # Project dependencies and scripts
+'''
 
 ## 🔧 Installation Instructions
 
@@ -53,7 +54,6 @@ Ensure you have the following installed:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/VipinKumar-70/Vipin-Personal-Portfolio.git
    git clone https://github.com/VipinKumar-70/Vipin-Personal-Portfolio.git
    cd Vipin-Personal-Portfolio
    npm install
