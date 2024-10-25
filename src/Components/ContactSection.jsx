@@ -18,13 +18,14 @@ function ContactSection() {
               </p>
             </div>
             <div>
-              <form action="">
+              <form action="https://formspree.io/f/mdkokrep" method="POST">
                 <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
                   {/* Name Input */}
                   <div className="col-span-2 sm:col-span-1">
                     <input
                       type="text"
                       placeholder="First Name"
+                      name="firstName"
                       className="w-full text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
                     />
                   </div>
@@ -32,6 +33,7 @@ function ContactSection() {
                     <input
                       type="text"
                       placeholder="Last Name"
+                      name="lastName"
                       className="w-full text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
                     />
                   </div>
@@ -41,6 +43,7 @@ function ContactSection() {
                     <input
                       type="email"
                       placeholder="Email"
+                      name="email"
                       className="w-full text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
                     />
                   </div>
@@ -48,13 +51,17 @@ function ContactSection() {
                     <input
                       type="tel"
                       placeholder="Phone"
+                      name="phone"
                       className="w-full text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
                     />
                   </div>
 
                   {/* Select Dropdown */}
                   <div className="col-span-2 text-gray-300">
-                    <select className="w-full p-3 bg-[#050709] border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df] font-medium">
+                    <select
+                      className="w-full p-3 bg-[#050709] border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df] font-medium"
+                      name="service"
+                    >
                       <option
                         className="bg-white text-black font-medium"
                         value=""
@@ -91,6 +98,7 @@ function ContactSection() {
                   {/* Textarea */}
                   <div className="col-span-2">
                     <textarea
+                      name="message"
                       placeholder="Message"
                       rows="7"
                       className="w-full text-[18px] font-medium p-3 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df] resize-none"
