@@ -50,28 +50,23 @@ function Header() {
           {/* Menu for larger screens */}
           <div className="hidden lg:flex items-center justify-between gap-8 px-5">
             <ul className="flex gap-8">
-              {[
-                "Home",
-                "Resume",
-                "Skills",
-                "Services",
-                "Projects",
-                "Contact",
-              ].map((items, index) => (
-                <li
-                  className="text-[18px] text-white font-serif relative group cursor-pointer"
-                  key={index}
-                >
-                  <Link
-                    to={`${items.toLowerCase()}`}
-                    smooth={true}
-                    duration={500}
+              {["Home", "Resume", "Skills", "Projects", "Contact"].map(
+                (items, index) => (
+                  <li
+                    className="text-[18px] text-white font-serif relative group cursor-pointer"
+                    key={index}
                   >
-                    {items}
-                  </Link>
-                  <div className="absolute h-[2.5px] rounded-xl w-full bg-gradient-to-r from-[#7a47df] via-[#5c34ac] to-[#311960] scale-x-0 origin-left group-hover:scale-x-100 group-hover:block transition-all duration-300 ease-out"></div>
-                </li>
-              ))}
+                    <Link
+                      to={`${items.toLowerCase()}`}
+                      smooth={true}
+                      duration={500}
+                    >
+                      {items}
+                    </Link>
+                    <div className="absolute h-[2.5px] rounded-xl w-full bg-gradient-to-r from-[#7a47df] via-[#5c34ac] to-[#311960] scale-x-0 origin-left group-hover:scale-x-100 group-hover:block transition-all duration-300 ease-out"></div>
+                  </li>
+                )
+              )}
             </ul>
             <div className="hidden lg:block">
               <button className="relative bg-gradient-to-r from-[#956ae9] via-[#5c34ac] to-[#311960] px-[30px] py-2 text-white text-[16px] rounded-3xl font-serif font-bold transition-all duration-500 ease-in-out overflow-hidden group">
