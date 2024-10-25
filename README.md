@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Personal Portfolio
 
 Welcome to my **Personal Portfolio** website, built using **React** and **Tailwind CSS**. This portfolio showcases my web development skills, experience, and projects. It includes a clean and modern design, interactive features, and is fully responsive across all devices.
@@ -52,27 +49,9 @@ Ensure you have the following installed:
 ## 📄 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.[MIT License](LICENSE)
-=======
-# Personal-Portfolio
->>>>>>> c5f287b (Initial commit)
-=======
-# Personal-Portfolio
-=======
-# React + Vite
-=======
-# Personal Portfolio
->>>>>>> 0e50729 (initial file add)
-
-Welcome to my **Personal Portfolio** website, built using **React** and **Tailwind CSS**. This portfolio showcases my web development skills, experience, and projects. It includes a clean and modern design, interactive features, and is fully responsive across all devices.
 
 ## 🚀 Features
 
-<<<<<<< HEAD
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> 2dfdf72 (intial commit)
->>>>>>> 4bf0034 (initial file add)
-=======
 - **Responsive Design**: Fully optimized for mobile, tablet, and desktop devices.
 - **Interactive Components**: Built with React for dynamic and interactive features.
 - **Fast and Lightweight**: Uses Vite for fast builds and development.
@@ -132,4 +111,3 @@ Ensure you have the following installed:
 ## 📄 License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
->>>>>>> 0e50729 (initial file add)
