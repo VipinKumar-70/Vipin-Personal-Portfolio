@@ -13,7 +13,7 @@ function Container() {
       <HeroSection />
       <ResumeSection />
       <SkillsSection />
-      {/* <ProjectSection /> */}
+      <ProjectSection />
       <ContactSection />
       <Footer />
     </div>
