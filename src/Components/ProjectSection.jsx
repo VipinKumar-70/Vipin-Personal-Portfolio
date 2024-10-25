@@ -3,7 +3,7 @@ import portfolio from "../assets/portfolio.png";
 function ProjectSection() {
   return (
     <>
-      <section id="project">
+      <section id="Projects">
         <div className="bg-[#140c1c] w-full mx-auto lg:px-16 px-4 py-20">
           <div className="max-w-[1370px] w-full grid place-items-center gap-y-3">
             <div className="lg:text-5xl md:text-4xl text-3xl py-4 font-bold bg-gradient-to-r from-[#8c51e4] via-[#b495e4] to-[#c1a8e7] bg-clip-text text-transparent">
