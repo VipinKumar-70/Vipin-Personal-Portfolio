@@ -26,6 +26,7 @@ function ContactSection() {
                       type="text"
                       placeholder="First Name"
                       name="firstName"
+                      required
                       className="w-full text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
                     />
                   </div>
@@ -34,6 +35,7 @@ function ContactSection() {
                       type="text"
                       placeholder="Last Name"
                       name="lastName"
+                      required
                       className="w-full text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
                     />
                   </div>
@@ -44,6 +46,7 @@ function ContactSection() {
                       type="email"
                       placeholder="Email"
                       name="email"
+                      required
                       className="w-full text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
                     />
                   </div>
@@ -52,6 +55,7 @@ function ContactSection() {
                       type="tel"
                       placeholder="Phone"
                       name="phone"
+                      required
                       className="w-full text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
                     />
                   </div>
@@ -61,6 +65,7 @@ function ContactSection() {
                     <select
                       className="w-full p-3 bg-[#050709] border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df] font-medium"
                       name="service"
+                      required
                     >
                       <option
                         className="bg-white text-black font-medium"
