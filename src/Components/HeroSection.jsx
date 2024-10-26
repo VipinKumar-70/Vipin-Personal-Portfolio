@@ -19,7 +19,7 @@ function HeroSection() {
               I am Vipin
             </div>
             <div
-              className="xl:text-7xl lg:text-6xl md:text-4xl text-3xl font-bold bg-gradient-to-r from-[#8c51e4] via-[#b495e4] to-[#c1a8e7] bg-clip-text text-transparent py-2
+              className="xl:text-7xl lg:text-6xl md:text-4xl text-3xl font-bold bg-gradient-to-r from-[#341d56] via-[#b8aace] to-[#fffeff] bg-clip-text text-transparent py-2
             "
             >
               Web Developer + UX Designer
