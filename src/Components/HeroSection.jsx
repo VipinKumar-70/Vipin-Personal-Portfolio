@@ -37,7 +37,7 @@ function HeroSection() {
             </div>
             <div className="flex items-center md:justify-start justify-center flex-wrap gap-5 my-5">
               <a
-                href="/VIPINDIPLOMA.pdf"
+                href="/VipinKumarResume.pdf"
                 download="Vipin Resume"
                 rel="noopener noreferrer"
                 target="_blank"

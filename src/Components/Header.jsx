@@ -69,17 +69,19 @@ function Header() {
               )}
             </ul>
             <div className="hidden lg:block">
-              <button className="relative bg-gradient-to-r from-[#956ae9] via-[#5c34ac] to-[#311960] px-[30px] py-2 text-white text-[16px] rounded-3xl font-serif font-bold transition-all duration-500 ease-in-out overflow-hidden group">
-                <span className="absolute top-0 -left-[150%] w-[5px] h-full bg-white opacity-30 group-hover:left-[150%] transition-all duration-500"></span>
-                <span className="absolute inset-0 bg-gradient-to-r from-[#311960] via-[#5c34ac] to-[#956ae9] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-                <span className="relative z-10">Hire me!</span>
-              </button>
+              <a href="mailto:vipin70kr@gmail.com">
+                <button className="relative bg-gradient-to-r from-[#956ae9] via-[#5c34ac] to-[#311960] px-[30px] py-2 text-white text-[16px] rounded-3xl font-serif font-bold transition-all duration-500 ease-in-out overflow-hidden group">
+                  <span className="absolute top-0 -left-[150%] w-[5px] h-full bg-white opacity-30 group-hover:left-[150%] transition-all duration-500"></span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-[#311960] via-[#5c34ac] to-[#956ae9] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+                  <span className="relative z-10">Hire me!</span>
+                </button>
+              </a>
             </div>
           </div>
 
           {/* Menu for small screens mobile/tablet */}
           {showNav && (
-            <div className="lg:hidden absolute top-[100px] left-0 w-full bg-gray-900 p-8 z-10 px-5">
+            <div className="lg:hidden absolute top-[90px] left-0 w-full bg-[#140c1c] p-8 z-10 px-5">
               <ul className="flex flex-col gap-6 items-center">
                 {["Home", "Resume", "Skills", "Projects", "Contact"].map(
                   (items, index) => (
@@ -88,7 +90,7 @@ function Header() {
                       key={index}
                     >
                       <Link
-                        to={`#${items.toLowerCase()}`}
+                        to={`${items.toLowerCase()}`}
                         smooth={true}
                         duration={500}
                         onClick={handleNavbar}

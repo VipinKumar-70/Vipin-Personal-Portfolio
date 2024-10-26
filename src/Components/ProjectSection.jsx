@@ -1,5 +1,25 @@
 import React from "react";
 import portfolio from "../assets/portfolio.png";
+
+function ProjectCard({ projectImg }) {
+  return (
+    <div className="col-span-1 overflow-hidden rounded-2xl relative group">
+      <img
+        className="w-full group-hover:scale-105 duration-300 ease-in-out"
+        src={projectImg}
+        alt=""
+      />
+      <div className="bg-[#8844c776] w-full h-full rounded-2xl p-2 absolute z-10 bottom-0 opacity-0 group-hover:opacity-100 duration-300 ease-in grid place-content-center backdrop-blur-md">
+        <a href="#">
+          <button className="text-3xl text-gray-700 font-bold p-4 px-6 bg-white rounded-2xl">
+            Preview
+          </button>
+        </a>
+      </div>
+    </div>
+  );
+}
+
 function ProjectSection() {
   return (
     <>
@@ -13,59 +33,11 @@ function ProjectSection() {
               We put your ideas and thus your wishes in the form of a unique web
               project that inspires you and you customers.
             </div>
-            <div className="grid place-items-center grid-cols-1 md:grid-cols-2 my-5 gap-6 px-10">
-              <div className="col-span-1 overflow-hidden rounded-2xl relative group">
-                <img
-                  className="group-hover:scale-105 duration-300 ease-in-out"
-                  src={portfolio}
-                  alt=""
-                />
-                <div className="bg-[#8744c7] rounded-2xl p-2 mx-4 absolute z-10 bottom-4 translate-y-36 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 ease-in">
-                  <p className="md:text-[18px] text-[16px] text-gray-300">
-                    This portfolio showcases my web development skills,
-                    experience, and projects.
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-1 overflow-hidden rounded-2xl relative group">
-                <img
-                  className="group-hover:scale-105 duration-300 ease-in-out"
-                  src={portfolio}
-                  alt=""
-                />
-                <div className="bg-[#8744c7] rounded-2xl p-4 mx-4 absolute z-10 bottom-4 translate-y-36 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 ease-in">
-                  <p className="md:text-[18px] text-[16px] text-gray-300">
-                    This portfolio showcases my web development skills,
-                    experience, and projects.
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-1 overflow-hidden rounded-2xl relative group">
-                <img
-                  className="group-hover:scale-105 duration-300 ease-in-out"
-                  src={portfolio}
-                  alt=""
-                />
-                <div className="bg-[#8744c7] rounded-2xl p-4 mx-4 absolute z-10 bottom-4 translate-y-36 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 ease-in">
-                  <p className="md:text-[18px] text-[16px] text-gray-300">
-                    This portfolio showcases my web development skills,
-                    experience, and projects.
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-1 overflow-hidden rounded-2xl relative group">
-                <img
-                  className="group-hover:scale-105 duration-300 ease-in-out"
-                  src={portfolio}
-                  alt=""
-                />
-                <div className="bg-[#8744c7] rounded-2xl p-4 mx-4 absolute z-10 bottom-4 translate-y-36 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 ease-in">
-                  <p className="md:text-[18px] text-[16px] text-gray-300">
-                    This portfolio showcases my web development skills,
-                    experience, and projects.
-                  </p>
-                </div>
-              </div>
+            <div className="grid place-items-center grid-cols-1 md:grid-cols-2 my-5 gap-6 px-10 overflow-hidden">
+              <ProjectCard projectImg={portfolio} />
+              <ProjectCard projectImg={portfolio} />
+              <ProjectCard projectImg={portfolio} />
+              <ProjectCard projectImg={portfolio} />
             </div>
           </div>
         </div>
