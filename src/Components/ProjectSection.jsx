@@ -20,12 +20,10 @@ function ProjectSection() {
                   src={portfolio}
                   alt=""
                 />
-                <div className="bg-[#8744c7] rounded-2xl p-4 mx-4 absolute z-10 bottom-4 translate-y-36 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 ease-in">
-                  <p className="text-[18px] text-gray-300">
+                <div className="bg-[#8744c7] rounded-2xl p-2 mx-4 absolute z-10 bottom-4 translate-y-36 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 ease-in">
+                  <p className="md:text-[18px] text-[16px] text-gray-300">
                     This portfolio showcases my web development skills,
-                    experience, and projects. It includes a clean and modern
-                    design, interactive features, and is fully responsive across
-                    all devices.
+                    experience, and projects.
                   </p>
                 </div>
               </div>
@@ -36,11 +34,9 @@ function ProjectSection() {
                   alt=""
                 />
                 <div className="bg-[#8744c7] rounded-2xl p-4 mx-4 absolute z-10 bottom-4 translate-y-36 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 ease-in">
-                  <p className="text-[18px] text-gray-300">
+                  <p className="md:text-[18px] text-[16px] text-gray-300">
                     This portfolio showcases my web development skills,
-                    experience, and projects. It includes a clean and modern
-                    design, interactive features, and is fully responsive across
-                    all devices.
+                    experience, and projects.
                   </p>
                 </div>
               </div>
@@ -51,11 +47,9 @@ function ProjectSection() {
                   alt=""
                 />
                 <div className="bg-[#8744c7] rounded-2xl p-4 mx-4 absolute z-10 bottom-4 translate-y-36 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 ease-in">
-                  <p className="text-[18px] text-gray-300">
+                  <p className="md:text-[18px] text-[16px] text-gray-300">
                     This portfolio showcases my web development skills,
-                    experience, and projects. It includes a clean and modern
-                    design, interactive features, and is fully responsive across
-                    all devices.
+                    experience, and projects.
                   </p>
                 </div>
               </div>
@@ -66,11 +60,9 @@ function ProjectSection() {
                   alt=""
                 />
                 <div className="bg-[#8744c7] rounded-2xl p-4 mx-4 absolute z-10 bottom-4 translate-y-36 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 ease-in">
-                  <p className="text-[18px] text-gray-300">
+                  <p className="md:text-[18px] text-[16px] text-gray-300">
                     This portfolio showcases my web development skills,
-                    experience, and projects. It includes a clean and modern
-                    design, interactive features, and is fully responsive across
-                    all devices.
+                    experience, and projects.
                   </p>
                 </div>
               </div>
