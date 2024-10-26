@@ -4,12 +4,14 @@ import reactpng from "../assets/react.png";
 import bootstrap from "../assets/bootstrap.png";
 import nodelogo from "../assets/node.png";
 import mongodblogo from "../assets/mongodb.png";
+import python from "../assets/python.png";
+import tailwindCSS from "../assets/tailwindCSS.png";
 
 function SkillBox({ title, percentage, skillImg }) {
   return (
     <>
       <div className="text-center group">
-        <div className="bg-[#1e122b] w-[180px] h-[180px] rounded-2xl grid place-items-center text-gray-400 font-bold text-[22px] p-5 border-transparent group-hover:bg-[#6554e452] group-hover:border-[#8e54e4] group-hover:border-[1px] duration-500 transition-all ease-in-out">
+        <div className="bg-[#1e122b] w-[165px] h-[165px] rounded-2xl grid place-items-center text-gray-400 font-bold text-[22px] p-5 border-transparent group-hover:bg-[#6554e452] group-hover:border-[#8e54e4] group-hover:border-[1px] duration-500 transition-all ease-in-out">
           <img
             className="w-2/4 group-hover:scale-110 transition-all ease-in-out duration-500"
             src={skillImg}
@@ -37,20 +39,25 @@ function SkillsSection() {
               project that inspires you and you customers.
             </div>
             <div className="flex justify-center items-center flex-wrap my-5 gap-4">
-              <SkillBox title="Javascript" percentage="92%" skillImg={jspng} />
-              <SkillBox title="React" percentage="89%" skillImg={reactpng} />
               <SkillBox
                 title="Bootstrap"
-                percentage="88%"
+                percentage="96%"
                 skillImg={bootstrap}
               />
-              <SkillBox title="Node" percentage="79%" skillImg={nodelogo} />
+              <SkillBox
+                title="Tailwind CSS"
+                percentage="93%"
+                skillImg={tailwindCSS}
+              />
+              <SkillBox title="Javascript" percentage="90%" skillImg={jspng} />
+              <SkillBox title="React" percentage="89%" skillImg={reactpng} />
+              <SkillBox title="Node.js" percentage="79%" skillImg={nodelogo} />
               <SkillBox
                 title="MongoDB"
                 percentage="83%"
                 skillImg={mongodblogo}
               />
-              <SkillBox title="Javascript" percentage="92%" skillImg={jspng} />
+              <SkillBox title="Python" percentage="90%" skillImg={python} />
             </div>
           </div>
         </div>

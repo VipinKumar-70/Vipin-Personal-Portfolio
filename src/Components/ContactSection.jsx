@@ -63,36 +63,36 @@ function ContactSection() {
                   {/* Select Dropdown */}
                   <div className="col-span-2 text-gray-300">
                     <select
-                      className="w-full p-3 bg-[#050709] border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df] font-medium"
+                      className="w-full p-4 bg-[#050709] border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df] font-medium"
                       name="service"
                       required
                     >
                       <option
-                        className="bg-white text-black font-medium"
+                        className="bg-gray-300 text-black font-medium"
                         value=""
                       >
                         - Please Choose an Option -
                       </option>
                       <option
-                        className="bg-white text-black font-medium"
+                        className="bg-gray-300 text-black font-medium"
                         value="Branding Design"
                       >
                         Branding Design
                       </option>
                       <option
-                        className="bg-white text-black font-medium"
+                        className="bg-gray-300 text-black font-medium"
                         value="Web Development"
                       >
                         Web Development
                       </option>
                       <option
-                        className="bg-white text-black font-medium"
+                        className="bg-gray-300 text-black font-medium"
                         value="UI/UX Design"
                       >
                         UI/UX Design
                       </option>
                       <option
-                        className="bg-white text-black font-medium"
+                        className="bg-gray-300 text-black font-medium"
                         value="Consulting"
                       >
                         Consulting
@@ -131,9 +131,9 @@ function ContactSection() {
                 <p className="text-gray-300 md:text-[18px]">Phone</p>
                 <a
                   className="text-white lg:text-2xl text-xl  font-sans font-medium hover:text-[#7043b3] duration-300"
-                  href="tel:011236548096"
+                  href="tel:+917678611694"
                 >
-                  +011236548096
+                  +917678611694
                 </a>
               </div>
             </div>
@@ -145,9 +145,9 @@ function ContactSection() {
                 <p className="text-gray-300 text-[18px]">Email</p>
                 <a
                   className="text-white lg:text-2xl text-xl font-sans font-medium hover:text-[#7043b3] duration-300"
-                  href="mailto:gerolddesign@mail.com"
+                  href="mailto:vk20140074250@gmail.com"
                 >
-                  gerolddesign@mail.com
+                  mail@vipindev.com
                 </a>
               </div>
             </div>
@@ -162,7 +162,7 @@ function ContactSection() {
                   href="https://www.google.com/maps?q=48.8584,2.2945"
                   target="_blank"
                 >
-                  Warne Park Street Pine, FL 33157, New York
+                  Garhi Harsaru, Gurgaon, Haryana
                 </a>
               </div>
             </div>

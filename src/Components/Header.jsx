@@ -81,25 +81,23 @@ function Header() {
           {showNav && (
             <div className="lg:hidden absolute top-[100px] left-0 w-full bg-gray-900 p-8 z-10 px-5">
               <ul className="flex flex-col gap-6 items-center">
-                {[
-                  "Home",
-                  "Resume",
-                  "Skills",
-                  "Services",
-                  "Projects",
-                  "Contact",
-                ].map((items, index) => (
-                  <li className="text-[18px] text-white font-serif" key={index}>
-                    <Link
-                      to={`#${items.toLowerCase()}`}
-                      smooth={true}
-                      duration={500}
-                      onClick={handleNavbar}
+                {["Home", "Resume", "Skills", "Projects", "Contact"].map(
+                  (items, index) => (
+                    <li
+                      className="text-[18px] text-white font-serif"
+                      key={index}
                     >
-                      {items}
-                    </Link>
-                  </li>
-                ))}
+                      <Link
+                        to={`#${items.toLowerCase()}`}
+                        smooth={true}
+                        duration={500}
+                        onClick={handleNavbar}
+                      >
+                        {items}
+                      </Link>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
           )}

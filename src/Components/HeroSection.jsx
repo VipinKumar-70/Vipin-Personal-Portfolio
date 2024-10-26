@@ -36,14 +36,38 @@ function HeroSection() {
               focussed solutions that connect billions of people
             </div>
             <div className="flex items-center md:justify-start justify-center flex-wrap gap-5 my-5">
-              <button className="flex items-center px-8 text-[18px] text-[#7937db] border-[#7937db] border-solid border-2 py-3 rounded-3xl hover:text-white hover:bg-[#7937db] duration-300">
-                Download CV <MdOutlineFileDownload className="text-2xl ml-1 " />
-              </button>
+              <a
+                href="/VIPINDIPLOMA.pdf"
+                download="Vipin Resume"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <button className="flex items-center px-8 text-[18px] text-[#7937db] border-[#7937db] border-solid border-2 py-3 rounded-3xl hover:text-white hover:bg-[#7937db] duration-300">
+                  Download CV
+                  <MdOutlineFileDownload className="text-2xl ml-1 " />
+                </button>
+              </a>
               <div className="flex lg:gap-2 md:gap-3 gap-4">
-                <FaFacebookF className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-white hover:bg-[#7937db] duration-300"></FaFacebookF>
-                <FaLinkedinIn className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-white hover:bg-[#7937db] duration-300"></FaLinkedinIn>
-                <FaDribbble className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-white hover:bg-[#7937db] duration-300"></FaDribbble>
-                <FaGithub className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-white hover:bg-[#7937db] duration-300"></FaGithub>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <FaFacebookF className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-white hover:bg-[#7937db] duration-300"></FaFacebookF>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/vipinkumar70/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-white hover:bg-[#7937db] duration-300"></FaLinkedinIn>
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <FaDribbble className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-white hover:bg-[#7937db] duration-300"></FaDribbble>
+                </a>
+                <a
+                  href="https://github.com/VipinKumar-70"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-white hover:bg-[#7937db] duration-300"></FaGithub>
+                </a>
               </div>
             </div>
           </div>

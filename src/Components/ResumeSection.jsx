@@ -32,20 +32,20 @@ function ResumeSection() {
           </div>
           <div className="w-full">
             <Card
-              year="2022 - Present"
-              title="Lead Developer"
-              place="Blockdots, London"
+              year="June 2023 - October 2023"
+              title="Frontend Developer"
+              place="GD Solution, New Delhi"
             />
             <Card
-              year="2022 - Present"
-              title="Full Stack Web Developer"
-              place="Parsons, The New School"
+              year="Nov 2022 - Feb 2023"
+              title="IT Trainer"
+              place="GDF Skills"
             />
-            <Card
+            {/* <Card
               year="2020 - 2021"
               title="UI Designer"
               place="House of Life, Leeds"
-            />
+            /> */}
           </div>
         </div>
 
@@ -59,19 +59,19 @@ function ResumeSection() {
           </div>
           <div className="w-full">
             <Card
+              year="2024 - Present"
+              title="Master in Computer Applications"
+              place="KR Mangalam University, Gurgaon"
+            />
+            <Card
+              year="2021 - 2024"
+              title="Bachelor in Computer Applications"
+              place="United College of Education, Greater Noida"
+            />
+            <Card
               year="2022 - 2023"
-              title="Programming Language"
-              place="Harvard University"
-            />
-            <Card
-              year="2016 - 2020"
-              title="Graphic Design Course"
-              place="University of Denmark"
-            />
-            <Card
-              year="2012 - 2015"
-              title="Web Design Course"
-              place="University of California"
+              title="Diploma in Information Technology"
+              place="GDF Skills, Uttam Nagar"
             />
           </div>
         </div>
