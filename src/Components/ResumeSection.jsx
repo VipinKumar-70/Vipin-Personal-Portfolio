@@ -39,7 +39,7 @@ function ResumeSection() {
             <Card
               year="Nov 2022 - Feb 2023"
               title="IT Trainer"
-              place="GDF Skills"
+              place="GDF Skills, Uttam Nagar"
             />
             {/* <Card
               year="2020 - 2021"
