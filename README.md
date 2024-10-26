@@ -60,3 +60,32 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 If you have any questions or need further assistance, please don't hesitate to contact me at
 [Vipin Kumar](mailto:vk20140074250@gmail.com). I'll be happy to help!
+
+### File Structure
+
+```
+Vipin-Personal-Portfolio/
+├── public/ # Static assets like images, fonts, and manifest file
+│ └── favicon.ico # Favicon for the site
+├── src/ # Source files for the project
+│ ├── assets/ # Images, icons, and other media assets
+│ │ ├── portfolio.png
+│ │ ├── tailwindNetflixClone.png
+│ ├── components/ # Reusable React components
+│ │ ├── Header.js # Navigation and header component
+│ │ ├── Footer.js # Footer component
+│ │ ├── ProjectCard.js # Card component for individual projects
+│ │ ├── ContactForm.js # Form component in the Contact section
+│ ├── pages/ # Page-level components or sections
+│ │ ├── Home.js # Main page component
+│ │ ├── Projects.js # Projects showcase section
+│ │ └── Contact.js # Contact form section
+│ ├── App.js # Main app component
+│ ├── index.js # React entry point
+│ └── styles/ # Tailwind CSS and other styling files
+│ └── global.css # Global styles and Tailwind imports
+├── .gitignore # Specifies files ignored by Git
+├── LICENSE # License file for the project
+├── README.md # Project documentation (you are here)
+└── package.json # Project dependencies and scripts
+```
