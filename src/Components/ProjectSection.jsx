@@ -31,11 +31,11 @@ function ProjectSection() {
 
   useScrollReveal(projectArray, {
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     stagger: 0.5,
     ease: "power3.out",
     scrub: 1.5,
-    x: (index) => (index % 2 === 0 ? -50 : 50),
+    x: (index) => (index % 2 === 0 ? -70 : 70),
   });
 
   return (
