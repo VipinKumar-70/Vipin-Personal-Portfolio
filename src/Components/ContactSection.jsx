@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
+import { useScrollReveal } from "../GSAPManager";
+
 function ContactSection() {
+  const contactFormRef = useRef();
+  const contactDetailRef = useRef();
+
+  const contactArray = [contactFormRef, contactDetailRef];
+
+  useScrollReveal(contactArray, {
+    opacity: 0,
+    x: (index) => (index === 0 ? -300 : 300),
+    duration: 1,
+    stagger: 0.2,
+    ease: "power3.out",
+    scrub: 1.5,
+  });
   return (
     <>
       <section id="contact">
         <div className="bg-[#050709] w-full mx-auto lg:px-20 px-4 p-20 flex flex-wrap-reverse items-center justify-between gap-4">
-          <div className="lg:w-[48%] md:w-full bg-[#140c1c] lg:p-12 p-6 grid items-center rounded-2xl">
+          <div
+            className="lg:w-[48%] md:w-full bg-[#140c1c] lg:p-12 p-6 grid items-center rounded-2xl"
+            ref={contactFormRef}
+          >
             <div>
               <p className="text-5xl bg-gradient-to-r from-[#8c51e4] via-[#b495e4] to-[#c1a8e7] bg-clip-text text-transparent py-2 font-bold">
                 Let’s work together!
@@ -124,7 +142,10 @@ function ContactSection() {
               </form>
             </div>
           </div>
-          <div className="lg:w-[48%] md:w-full grid lg:items-center gap-10 lg:p-20 p-4">
+          <div
+            className="lg:w-[48%] md:w-full grid lg:items-center gap-10 lg:p-20 p-4"
+            ref={contactDetailRef}
+          >
             <div className="flex justify-start items-center md:gap-4 gap-2">
               <div className="text-gray-300 p-3 bg-gradient-to-r from-[#5f3999] via-[#5d2fa1] to-[#72579a] rounded-[50%] grid items-center text-2xl">
                 <LiaPhoneVolumeSolid />

@@ -16,7 +16,7 @@ function Header() {
   const mailRef = useRef(null);
   const navlinkRef = useRef(null);
   const hireRef = useRef(null);
-  NavbarAnimation([logoRef, mailRef, navlinkRef, hireRef]); // Call the animation with the ref
+  NavbarAnimation([logoRef, mailRef, navlinkRef, hireRef]);
 
   return (
     <>

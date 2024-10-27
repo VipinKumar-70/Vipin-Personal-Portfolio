@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import jspng from "../assets/js.png";
 import reactpng from "../assets/react.png";
 import bootstrap from "../assets/bootstrap.png";
@@ -6,6 +6,7 @@ import nodelogo from "../assets/node.png";
 import mongodblogo from "../assets/mongodb.png";
 import python from "../assets/python.png";
 import tailwindCSS from "../assets/tailwindCSS.png";
+import { useScrollReveal } from "../GSAPManager";
 
 function SkillBox({ title, percentage, skillImg }) {
   return (
@@ -26,11 +27,32 @@ function SkillBox({ title, percentage, skillImg }) {
 }
 
 function SkillsSection() {
+  const skillsRef = useRef();
+  const skillsBoxRef = useRef();
+
+  const skillsArray = [skillsRef, skillsBoxRef];
+
+  useScrollReveal(skillsArray, {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.5,
+    ease: "power3.out",
+    scrub: 1.5,
+    scrollTrigger: {
+      start: "top 75%",
+      end: "bottom 25%",
+    },
+  });
+
   return (
     <>
       <section id="skills">
         <div className="bg-[#140c1c] w-full mx-auto lg:px-16 px-4 py-20">
-          <div className="max-w-[1370px] w-full grid place-items-center gap-y-3">
+          <div
+            className="max-w-[1370px] w-full grid place-items-center gap-y-3"
+            ref={skillsRef}
+          >
             <div className="lg:text-5xl md:text-4xl text-3xl py-4 font-bold bg-gradient-to-r from-[#8c51e4] via-[#b495e4] to-[#c1a8e7] bg-clip-text text-transparent">
               My Skills
             </div>
@@ -38,7 +60,10 @@ function SkillsSection() {
               We put your ideas and thus your wishes in the form of a unique web
               project that inspires you and you customers.
             </div>
-            <div className="flex justify-center items-center flex-wrap my-5 gap-4">
+            <div
+              className="flex justify-center items-center flex-wrap my-5 gap-4"
+              ref={skillsBoxRef}
+            >
               <SkillBox
                 title="Bootstrap"
                 percentage="96%"

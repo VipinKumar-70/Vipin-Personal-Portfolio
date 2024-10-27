@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
 
 export const cursorAnimation = (cursorRef) => {
   useGSAP(() => {
@@ -62,4 +63,44 @@ export const HeroAnimation = (heroRefs) => {
       });
     }
   }, [heroRefs]);
+};
+
+gsap.registerPlugin(ScrollTrigger);
+
+export const useScrollReveal = (scrollRefs, animationProperties) => {
+  useGSAP(() => {
+    const scrollElements = scrollRefs.map((ref) => ref.current).filter(Boolean);
+
+    if (scrollElements.length) {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: scrollElements[0],
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play reverse play reverse",
+          scrub: animationProperties.scrub || false, // Allow `scrub` to be set or default to false
+          ...animationProperties.scrollTrigger,
+        },
+      });
+
+      scrollElements.forEach((element, index) => {
+        tl.from(
+          element,
+          {
+            ...animationProperties,
+            x:
+              typeof animationProperties.x === "function"
+                ? animationProperties.x(index)
+                : animationProperties.x, // Handle x position based on index
+            scrollTrigger: undefined, // Exclude scrollTrigger from element-specific settings
+          },
+          index * (animationProperties.stagger || 0) // Apply stagger only if specified
+        );
+      });
+
+      return () => {
+        ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      };
+    }
+  }, [scrollRefs, animationProperties]);
 };

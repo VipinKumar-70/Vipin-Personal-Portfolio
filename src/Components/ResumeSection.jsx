@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaAward } from "react-icons/fa6";
 import { FaGraduationCap } from "react-icons/fa";
+import { useScrollReveal } from "../GSAPManager";
+import gsap from "gsap";
+
 function Card({ year, title, place }) {
   return (
     <div className="group">
@@ -16,6 +19,20 @@ function Card({ year, title, place }) {
 }
 
 function ResumeSection() {
+  const expRef = useRef();
+  const eduRef = useRef();
+
+  const refArray = [expRef, eduRef];
+
+  useScrollReveal(refArray, {
+    opacity: 0,
+    x: (index) => (index === 0 ? -300 : 300),
+    duration: 1,
+    stagger: 0.2,
+    ease: "power3.out",
+    scrub: 1.5,
+  });
+
   return (
     <section
       id="resume"
@@ -23,7 +40,10 @@ function ResumeSection() {
     >
       <div className="max-w-[1370px] w-full py-20 flex md:justify-between flex-wrap gap-y-12 md:px-10 lg:px-0">
         {/* Experience Section */}
-        <div className="experienceSection w-full md:w-[48%] px-6 flex flex-col items-start gap-y-10">
+        <div
+          className="experienceSection w-full md:w-[48%] px-6 flex flex-col items-start gap-y-10"
+          ref={expRef}
+        >
           <div className="w-full flex items-center gap-x-2">
             <FaAward className="text-5xl" />
             <h2 className="lg:text-[40px] md:text-[33px] text-[28px] p-2 font-medium bg-gradient-to-r from-[#8c51e4] via-[#b495e4] to-[#c1a8e7] bg-clip-text text-transparent">
@@ -50,7 +70,10 @@ function ResumeSection() {
         </div>
 
         {/* Education Section */}
-        <div className="educationSection w-full md:w-[48%] px-6 flex flex-col items-start gap-y-10">
+        <div
+          className="educationSection w-full md:w-[48%] px-6 flex flex-col items-start gap-y-10"
+          ref={eduRef}
+        >
           <div className="w-full flex items-center gap-x-2">
             <FaGraduationCap className="text-5xl" />
             <h2 className="lg:text-[40px] md:text-[33px] text-[28px] p-2 font-medium bg-gradient-to-r from-[#8c51e4] via-[#b495e4] to-[#c1a8e7] bg-clip-text text-transparent">

@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useRef } from "react";
 import reactLogo from "../assets/logo.png";
+import { useScrollReveal } from "../GSAPManager";
+
 function Footer() {
+  const footerRef = useRef();
+  useScrollReveal([footerRef], {
+    opacity: 0,
+    y: -50,
+    duration: 1,
+    stagger: 0.5,
+    ease: "power3.out",
+    scrub: 1.5,
+  });
   return (
     <section id="footer">
       <div className="bg-[#140c1c] w-full mx-auto lg:px-16 px-4 py-4">
-        <div className="max-w-[1370px] w-full grid place-items-center gap-y-3">
+        <div
+          className="max-w-[1370px] w-full grid place-items-center gap-y-3"
+          ref={footerRef}
+        >
           <div className="lg:text-5xl md:text-4xl text-3xl py-4 font-bold bg-gradient-to-r from-[#8c51e4] via-[#b495e4] to-[#c1a8e7] bg-clip-text text-transparent">
             <img className="w-[110px]" src={reactLogo} alt="" />
           </div>

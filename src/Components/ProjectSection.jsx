@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import portfolio from "../assets/portfolio.png";
+import { useScrollReveal } from "../GSAPManager";
 
-function ProjectCard({ projectImg }) {
+function ProjectCard({ projectImg, cardRef }) {
   return (
-    <div className="col-span-1 overflow-hidden rounded-2xl relative group">
+    <div
+      ref={cardRef}
+      className="col-span-1 overflow-hidden rounded-2xl relative group"
+    >
       <img
         className="w-full group-hover:scale-105 duration-300 ease-in-out"
         src={projectImg}
@@ -21,11 +25,27 @@ function ProjectCard({ projectImg }) {
 }
 
 function ProjectSection() {
+  const projectRef = useRef();
+  const projectBoxes = Array.from({ length: 4 }, () => useRef());
+  const projectArray = [projectRef, ...projectBoxes];
+
+  useScrollReveal(projectArray, {
+    opacity: 0,
+    duration: 1,
+    stagger: 0.5,
+    ease: "power3.out",
+    scrub: 1.5,
+    x: (index) => (index % 2 === 0 ? -50 : 50),
+  });
+
   return (
     <>
       <section id="projects">
         <div className="bg-[#050709] w-full mx-auto lg:px-16 px-4 py-20">
-          <div className="max-w-[1370px] w-full grid place-items-center gap-y-3">
+          <div
+            className="max-w-[1370px] w-full grid place-items-center gap-y-3"
+            ref={projectRef}
+          >
             <div className="lg:text-5xl md:text-4xl text-3xl py-4 font-bold bg-gradient-to-r from-[#8c51e4] via-[#b495e4] to-[#c1a8e7] bg-clip-text text-transparent">
               Recent Projects
             </div>
@@ -34,10 +54,13 @@ function ProjectSection() {
               project that inspires you and you customers.
             </div>
             <div className="grid place-items-center grid-cols-1 md:grid-cols-2 my-5 gap-6 px-10 overflow-hidden">
-              <ProjectCard projectImg={portfolio} />
-              <ProjectCard projectImg={portfolio} />
-              <ProjectCard projectImg={portfolio} />
-              <ProjectCard projectImg={portfolio} />
+              {projectBoxes.map((boxRef, index) => (
+                <ProjectCard
+                  key={index}
+                  projectImg={portfolio}
+                  cardRef={boxRef}
+                />
+              ))}
             </div>
           </div>
         </div>
