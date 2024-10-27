@@ -3,6 +3,8 @@ import { useGSAP } from "@gsap/react";
 
 export const cursorAnimation = (cursorRef) => {
   useGSAP(() => {
+    gsap.set(cursorRef.current, { opacity: 0 });
+
     const xTo = gsap.quickTo(cursorRef.current, "x", {
       duration: 0.4,
       ease: "power2.out",
@@ -12,7 +14,12 @@ export const cursorAnimation = (cursorRef) => {
       ease: "power2.out",
     });
 
+    let isFirstMove = true;
     const handleMouseMove = (event) => {
+      if (isFirstMove) {
+        gsap.set(cursorRef.current, { opacity: 1, duration: 0.3 });
+        isFirstMove = false;
+      }
       xTo(event.clientX);
       yTo(event.clientY);
     };
