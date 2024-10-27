@@ -1,25 +1,41 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
 import photo from "../assets/photo.png";
+import { cursorAnimation, HeroAnimation } from "../GSAPManager";
 
 function HeroSection() {
+  const cursorRef = useRef(null);
+  cursorAnimation(cursorRef);
+
+  const heroLeftRef = useRef(null);
+  const heroRightRef = useRef(null);
+
+  HeroAnimation([heroLeftRef, heroRightRef]);
+
   return (
     <>
+      <div
+        ref={cursorRef}
+        className="fixed top-0 left-0 p-4 m-2 bg-[#6941a591] rounded-full pointer-events-none z-50"
+      ></div>
       <section
         id="home"
         className="w-full mx-auto lg:px-20 px-4 py-6 text-white font-serif bg-gradient-to-r from-[#0f0715] via-[#0f0715] to-[#221338]"
       >
         <div className="max-w-[1370px] w-full py-8 flex md:justify-between justify-center gap-y-4 items-center md:px-10 lg:px-0">
-          <div className="lg:w-[50%] w-full md:px-0 px-10 flex flex-col lg:gap-4 md:gap-3">
+          <div
+            className="lg:w-[50%] w-full md:px-0 px-10 flex flex-col lg:gap-4 md:gap-3"
+            ref={heroLeftRef}
+          >
             <div className="lg:text-5xl md:text-3xl text-3xl font-bold text-gray-300">
               I am Vipin
             </div>
             <div
-              className="xl:text-7xl lg:text-6xl md:text-4xl text-3xl font-bold bg-gradient-to-r from-[#341d56] via-[#b8aace] to-[#fffeff] bg-clip-text text-transparent py-2
+              className="xl:text-7xl lg:text-6xl md:text-4xl text-3xl font-bold bg-gradient-to-r from-[#6941a5] via-[#b09bd1] to-[#cac5d1] bg-clip-text text-transparent py-2
             "
             >
               Web Developer + UX Designer
@@ -71,7 +87,10 @@ function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="flex lg:justify-center sm:justify-end">
+          <div
+            className="flex lg:justify-center sm:justify-end"
+            ref={heroRightRef}
+          >
             <div className="xl:h-[450px] xl:w-[450px] lg:h-[400px] lg:w-[400px]  place-items-center xl:mr-16 lg:mr-10 md:ml-2 mb-16 rotate-6 border-2 border-[#2d1651] border-solid rounded-3xl overflow-hidden md:w-[300px] md:h-[300px] transition-all duration-500 ease-in-out transform hover:rotate-0 hover:border-[#7937db] hidden md:block">
               <img
                 className="w-full h-full object-cover rounded-3xl"
