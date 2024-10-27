@@ -35,7 +35,7 @@ export const NavbarAnimation = (refs) => {
         duration: 1,
         delay: 0.4,
         ease: "power2.out",
-        stagger: 0.2,
+        stagger: 0.3,
       });
     }
   }, [refs]);
