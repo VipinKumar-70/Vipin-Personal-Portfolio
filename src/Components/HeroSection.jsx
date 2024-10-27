@@ -91,9 +91,9 @@ function HeroSection() {
             className="flex lg:justify-center sm:justify-end"
             ref={heroRightRef}
           >
-            <div className="xl:h-[450px] xl:w-[450px] lg:h-[400px] lg:w-[400px]  place-items-center xl:mr-16 lg:mr-10 md:ml-2 mb-16 rotate-6 border-2 border-[#2d1651] border-solid rounded-3xl overflow-hidden md:w-[300px] md:h-[300px] transition-all duration-500 ease-in-out transform hover:rotate-0 hover:border-[#7937db] hidden md:block">
+            <div className="xl:h-[450px] xl:w-[450px] lg:h-[400px] lg:w-[400px]  place-items-center xl:mr-16 lg:mr-10 md:ml-2 mb-16 rotate-6 border-2 border-[#2d1651] border-solid rounded-[50%] overflow-hidden md:w-[300px] md:h-[300px] transition-all duration-500 ease-in-out transform hover:rotate-0 hover:border-[#7937db] hidden md:block">
               <img
-                className="w-full h-full object-cover rounded-3xl"
+                className="w-full h-full object-cover rounded-3xl "
                 src={photo}
                 alt="img"
               />

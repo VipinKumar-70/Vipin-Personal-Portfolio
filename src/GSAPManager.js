@@ -75,10 +75,11 @@ export const useScrollReveal = (scrollRefs, animationProperties) => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: scrollElements[0],
-          start: "top 80%",
+          start: "top 70%",
           end: "bottom 20%",
-          toggleActions: "play reverse play reverse",
-          scrub: animationProperties.scrub || false, // Allow `scrub` to be set or default to false
+          // markers: true,
+          toggleActions: "play none none none",
+          // scrub: true,
           ...animationProperties.scrollTrigger,
         },
       });
@@ -91,10 +92,10 @@ export const useScrollReveal = (scrollRefs, animationProperties) => {
             x:
               typeof animationProperties.x === "function"
                 ? animationProperties.x(index)
-                : animationProperties.x, // Handle x position based on index
-            scrollTrigger: undefined, // Exclude scrollTrigger from element-specific settings
+                : animationProperties.x,
+            scrollTrigger: undefined,
           },
-          index * (animationProperties.stagger || 0) // Apply stagger only if specified
+          index * (animationProperties.stagger || 0)
         );
       });
 

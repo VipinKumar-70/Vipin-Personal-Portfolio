@@ -31,7 +31,7 @@ function ProjectSection() {
 
   useScrollReveal(projectArray, {
     opacity: 0,
-    duration: 1.5,
+    duration: 1,
     stagger: 0.5,
     ease: "power3.out",
     scrub: 1.5,
