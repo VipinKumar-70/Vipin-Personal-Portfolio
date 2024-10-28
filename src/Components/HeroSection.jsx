@@ -21,7 +21,7 @@ function HeroSection() {
     <>
       <div
         ref={cursorRef}
-        className="fixed top-0 left-0 p-4 m-2 bg-[#6941a591] rounded-full pointer-events-none z-50"
+        className="fixed top-0 left-0 p-4 m-2 bg-[#6941a591] rounded-full pointer-events-none z-50 hidden md:block"
       ></div>
       <Element name="home">
         <section className="w-full mx-auto lg:px-20 px-4 py-6 text-white font-serif bg-gradient-to-r from-[#0f0715] via-[#0f0715] to-[#221338]">
