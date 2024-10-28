@@ -13,7 +13,7 @@ function SkillBox({ title, percentage, skillImg }) {
   return (
     <>
       <div className="text-center group">
-        <div className="bg-[#1e122b] w-[165px] h-[165px] rounded-2xl grid place-items-center text-gray-400 font-bold text-[22px] p-5 border-transparent group-hover:bg-[#6554e452] group-hover:border-[#8e54e4] group-hover:border-[1px] duration-500 transition-all ease-in-out">
+        <div className="bg-[#1e122b] md:w-[165px] md:h-[165px] w-[130px] h-[130px] rounded-2xl grid place-items-center text-gray-400 font-bold text-[22px] p-5 border-transparent group-hover:bg-[#6554e452] group-hover:border-[#8e54e4] group-hover:border-[1px] duration-500 transition-all ease-in-out">
           <img
             className="w-2/4 group-hover:scale-110 transition-all ease-in-out duration-500"
             src={skillImg}

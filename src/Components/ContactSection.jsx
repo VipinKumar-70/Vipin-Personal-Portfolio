@@ -29,10 +29,10 @@ function ContactSection() {
               ref={contactFormRef}
             >
               <div>
-                <p className="text-5xl bg-gradient-to-r from-[#8c51e4] via-[#b495e4] to-[#c1a8e7] bg-clip-text text-transparent py-2 font-bold">
+                <p className="md:text-5xl text-4xl bg-gradient-to-r from-[#8c51e4] via-[#b495e4] to-[#c1a8e7] bg-clip-text text-transparent py-2 font-bold">
                   Let’s work together!
                 </p>
-                <p className="text-[19px] text-gray-300 my-4 ">
+                <p className="md:text-[19px] text-gray-300 my-4 ">
                   I design and code beautifully simple things and i love what i
                   do. Just simple like that!
                 </p>
@@ -47,7 +47,7 @@ function ContactSection() {
                         placeholder="First Name"
                         name="firstName"
                         required
-                        className="w-full text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
+                        className="w-full md:text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
                       />
                     </div>
                     <div className="col-span-2 sm:col-span-1">
@@ -56,7 +56,7 @@ function ContactSection() {
                         placeholder="Last Name"
                         name="lastName"
                         required
-                        className="w-full text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
+                        className="w-full md:text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
                       />
                     </div>
 
@@ -67,7 +67,7 @@ function ContactSection() {
                         placeholder="Email"
                         name="email"
                         required
-                        className="w-full text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
+                        className="w-full md:text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
                       />
                     </div>
                     <div className="col-span-2 sm:col-span-1">
@@ -76,14 +76,14 @@ function ContactSection() {
                         placeholder="Phone"
                         name="phone"
                         required
-                        className="w-full text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
+                        className="w-full md:text-[18px] font-medium p-4 px-5 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df]"
                       />
                     </div>
 
                     {/* Select Dropdown */}
                     <div className="col-span-2 text-gray-300">
                       <select
-                        className="w-full p-4 bg-[#050709] border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df] font-medium"
+                        className="w-full p-4 bg-[#050709] border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df] md:font-medium"
                         name="service"
                         required
                       >
@@ -126,16 +126,16 @@ function ContactSection() {
                         name="message"
                         placeholder="Message"
                         rows="7"
-                        className="w-full text-[18px] font-medium p-3 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df] resize-none"
+                        className="w-full md:text-[18px] font-medium p-3 bg-[#050709] text-gray-300 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-[#7a47df] resize-none"
                       ></textarea>
                     </div>
 
                     {/* Submit Button */}
                     <div>
-                      <button className="relative bg-gradient-to-r from-[#956ae9] via-[#5c34ac] to-[#311960] px-[20px] py-3 text-white text-[16px] rounded-3xl font-serif font-bold transition-all duration-500 ease-in-out overflow-hidden group">
+                      <button className="relative bg-gradient-to-r from-[#956ae9] via-[#5c34ac] to-[#311960] md:px-[20px] px-[14px] md:py-3 py-2 text-white text-[18px] rounded-3xl font-serif md:font-bold transition-all duration-500 ease-in-out overflow-hidden group">
                         <span className="absolute top-0 -left-[150%] w-[5px] h-full bg-white opacity-30 group-hover:left-[150%] transition-all duration-500"></span>
                         <span className="absolute inset-0 bg-gradient-to-r from-[#311960] via-[#5c34ac] to-[#956ae9] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-                        <span className="relative z-10 text-xl">
+                        <span className="relative z-10 md:text-xl">
                           Send Message
                         </span>
                       </button>
