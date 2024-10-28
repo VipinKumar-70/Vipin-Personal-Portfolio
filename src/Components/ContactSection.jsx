@@ -23,7 +23,7 @@ function ContactSection() {
     <>
       <Element name="contact">
         <section>
-          <div className="bg-[#050709] w-full mx-auto lg:px-20 px-4 p-20 flex flex-wrap-reverse items-center justify-between gap-4">
+          <div className="bg-[#050709] w-full mx-auto lg:px-20 px-4 p-6 flex flex-wrap-reverse items-center justify-between gap-4">
             <div
               className="lg:w-[48%] md:w-full bg-[#140c1c] lg:p-12 p-6 grid items-center rounded-2xl"
               ref={contactFormRef}
@@ -155,7 +155,7 @@ function ContactSection() {
                 <div>
                   <p className="text-gray-300 md:text-[18px]">Phone</p>
                   <a
-                    className="text-white lg:text-2xl text-xl  font-sans font-medium hover:text-[#7043b3] duration-300"
+                    className="text-white lg:text-2xl sm:text-xl text-[18px]  font-sans font-medium hover:text-[#7043b3] duration-300"
                     href="tel:+917678611694"
                   >
                     +917678611694
@@ -167,12 +167,12 @@ function ContactSection() {
                   <MdOutlineMail />
                 </div>
                 <div>
-                  <p className="text-gray-300 text-[18px]">Email</p>
+                  <p className="text-gray-300 md:text-[18px]">Email</p>
                   <a
-                    className="text-white lg:text-2xl text-xl font-sans font-medium hover:text-[#7043b3] duration-300"
-                    href="mailto:vk20140074250@gmail.com"
+                    className="text-white lg:text-2xl sm:text-xl text-[18px] font-sans font-medium hover:text-[#7043b3] duration-300"
+                    href="mailto:vipin70kr@gmail.com"
                   >
-                    mail@vipindev.com
+                    vipin70kr@gmail.com
                   </a>
                 </div>
               </div>
@@ -181,9 +181,9 @@ function ContactSection() {
                   <IoLocationOutline />
                 </div>
                 <div>
-                  <p className="text-gray-300 text-[18px]">Address</p>
+                  <p className="text-gray-300 md:text-[18px]">Address</p>
                   <a
-                    className="text-white lg:text-2xl text-xl font-sans font-medium hover:text-[#7043b3] duration-300"
+                    className="text-white lg:text-2xl sm:text-xl text-[18px] font-sans font-medium hover:text-[#7043b3] duration-300"
                     href="https://www.google.com/maps?q=48.8584,2.2945"
                     target="_blank"
                   >

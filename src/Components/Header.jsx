@@ -31,9 +31,9 @@ function Header() {
                 ref={logoRef}
               />
             </a>
-            <a href="mailto:vk20140074250@gmail.com" ref={mailRef}>
+            <a href="mailto:vipin70kr@gmail.com" ref={mailRef}>
               <span className="hidden md:inline-block text-white hover:text-[#5c34ac] duration-300 lg:text-xl text-center font-bold font-serif">
-                mail@vipindev.com
+                vipin70kr@gmail.com
               </span>
             </a>
           </div>
