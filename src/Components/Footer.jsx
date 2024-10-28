@@ -39,7 +39,7 @@ function Footer() {
                 )}
               </ul>
               <button
-                class="fixed bottom-10 right-4 cursor-pointer bg-[#311960] px-3 py-2 rounded-md text-gray-200 tracking-wider shadow-xl animate-bounce hover:animate-none"
+                class="hidden md:block fixed bottom-10 right-4 cursor-pointer bg-[#311960] px-3 py-2 rounded-md text-gray-200 tracking-wider shadow-xl animate-bounce hover:animate-none "
                 onClick={() => scroll.scrollToTop()}
               >
                 <svg
