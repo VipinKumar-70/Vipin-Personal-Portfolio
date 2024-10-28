@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import reactLogo from "../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { NavbarAnimation } from "../GSAPManager";
 
 function Header() {

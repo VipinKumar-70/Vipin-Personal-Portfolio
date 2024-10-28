@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import portfolio from "../assets/portfolio.png";
+import { Element } from "react-scroll";
 import { useScrollReveal } from "../GSAPManager";
 
 function ProjectCard({ projectImg, cardRef }) {
@@ -40,31 +41,33 @@ function ProjectSection() {
 
   return (
     <>
-      <section id="projects">
-        <div className="bg-[#050709] w-full mx-auto lg:px-16 px-4 py-20">
-          <div
-            className="max-w-[1370px] w-full grid place-items-center gap-y-3"
-            ref={projectRef}
-          >
-            <div className="lg:text-5xl md:text-4xl text-3xl py-4 font-bold bg-gradient-to-r from-[#8c51e4] via-[#b495e4] to-[#c1a8e7] bg-clip-text text-transparent">
-              Recent Projects
-            </div>
-            <div className="text-[18px] text-gray-300 text-center md:w-3/6 w-full">
-              We put your ideas and thus your wishes in the form of a unique web
-              project that inspires you and you customers.
-            </div>
-            <div className="grid place-items-center grid-cols-1 md:grid-cols-2 my-5 gap-6 px-10 overflow-hidden">
-              {projectBoxes.map((boxRef, index) => (
-                <ProjectCard
-                  key={index}
-                  projectImg={portfolio}
-                  cardRef={boxRef}
-                />
-              ))}
+      <Element name="projects">
+        <section>
+          <div className="bg-[#050709] w-full mx-auto lg:px-16 px-4 py-20">
+            <div
+              className="max-w-[1370px] w-full grid place-items-center gap-y-3"
+              ref={projectRef}
+            >
+              <div className="lg:text-5xl md:text-4xl text-3xl py-4 font-bold bg-gradient-to-r from-[#8c51e4] via-[#b495e4] to-[#c1a8e7] bg-clip-text text-transparent">
+                Recent Projects
+              </div>
+              <div className="text-[18px] text-gray-300 text-center md:w-3/6 w-full">
+                We put your ideas and thus your wishes in the form of a unique
+                web project that inspires you and you customers.
+              </div>
+              <div className="grid place-items-center grid-cols-1 md:grid-cols-2 my-5 gap-6 px-10 overflow-hidden">
+                {projectBoxes.map((boxRef, index) => (
+                  <ProjectCard
+                    key={index}
+                    projectImg={portfolio}
+                    cardRef={boxRef}
+                  />
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Element>
     </>
   );
 }
