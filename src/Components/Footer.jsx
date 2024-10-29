@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import reactLogo from "../assets/logo.png";
-import { Element, animateScroll as scroll } from "react-scroll";
+import { Link, Element, animateScroll as scroll } from "react-scroll";
 import { useScrollReveal } from "../GSAPManager";
 
 function Footer() {
@@ -29,10 +29,16 @@ function Footer() {
                 {["Home", "Resume", "Skills", "Projects", "Contact"].map(
                   (items, index) => (
                     <li
-                      className="text-[18px] text-white font-serif relative group"
+                      className="text-[18px] text-white font-serif relative group cursor-pointer"
                       key={index}
                     >
-                      <a href={`#${items.toLowerCase()}`}>{items}</a>
+                      <Link
+                        to={`${items.toLowerCase()}`}
+                        duration={500}
+                        smooth={true}
+                      >
+                        {items}
+                      </Link>
                       <div className="absolute h-[2.5px] rounded-xl w-full bg-gradient-to-r from-[#7a47df] via-[#5c34ac] to-[#311960] scale-x-0 origin-left group-hover:scale-x-100 group-hover:block transition-all duration-300 ease-out"></div>
                     </li>
                   )

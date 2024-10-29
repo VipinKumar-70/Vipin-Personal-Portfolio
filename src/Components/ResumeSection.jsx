@@ -60,11 +60,6 @@ function ResumeSection() {
                 title="IT Trainer"
                 place="GDF Skills, Uttam Nagar"
               />
-              {/* <Card
-              year="2020 - 2021"
-              title="UI Designer"
-              place="House of Life, Leeds"
-            /> */}
             </div>
           </div>
 
@@ -88,7 +83,7 @@ function ResumeSection() {
               <Card
                 year="2021 - 2024"
                 title="Bachelor in Computer Applications"
-                place="United College of Education, Greater Noida"
+                place="Guru Gobind Singh Indraprastha University, New Delhi"
               />
               <Card
                 year="2022 - 2023"
