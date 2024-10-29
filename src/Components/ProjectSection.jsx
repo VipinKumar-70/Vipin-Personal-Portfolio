@@ -33,7 +33,7 @@ function ProjectSection() {
   useScrollReveal(projectArray, {
     opacity: 0,
     duration: 1,
-    stagger: 0.5,
+    stagger: 0.3,
     ease: "power3.out",
     scrub: 1.5,
     x: (index) => (index % 2 === 0 ? -70 : 70),
@@ -43,7 +43,7 @@ function ProjectSection() {
     <>
       <Element name="projects">
         <section>
-          <div className="bg-[#050709] w-full mx-auto lg:px-16 px-4 py-20">
+          <div className="bg-[#050709] w-full mx-auto lg:px-16 px-4 py-20 font-folio">
             <div
               className="max-w-[1370px] w-full grid place-items-center gap-y-3"
               ref={projectRef}

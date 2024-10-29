@@ -50,7 +50,7 @@ function SkillsSection() {
     <>
       <Element name="skills">
         <section>
-          <div className="bg-[#140c1c] w-full mx-auto lg:px-16 px-4 py-20">
+          <div className="bg-[#140c1c] w-full mx-auto lg:px-16 px-4 py-20 font-folio">
             <div
               className="max-w-[1370px] w-full grid place-items-center gap-y-3"
               ref={skillsRef}

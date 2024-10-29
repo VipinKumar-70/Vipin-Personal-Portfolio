@@ -23,7 +23,7 @@ function ContactSection() {
     <>
       <Element name="contact">
         <section>
-          <div className="bg-[#050709] w-full mx-auto lg:px-20 px-4 p-6 flex flex-wrap-reverse items-center justify-between gap-4">
+          <div className="bg-[#050709] w-full mx-auto lg:px-20 px-4 p-6 flex flex-wrap-reverse items-center justify-between gap-4 font-folio">
             <div
               className="lg:w-[48%] md:w-full bg-[#140c1c] lg:p-12 p-6 grid items-center rounded-2xl"
               ref={contactFormRef}
@@ -132,7 +132,7 @@ function ContactSection() {
 
                     {/* Submit Button */}
                     <div>
-                      <button className="relative bg-gradient-to-r from-[#956ae9] via-[#5c34ac] to-[#311960] md:px-[20px] px-[14px] md:py-3 py-2 text-white text-[18px] rounded-3xl font-serif md:font-bold transition-all duration-500 ease-in-out overflow-hidden group">
+                      <button className="relative bg-gradient-to-r from-[#956ae9] via-[#5c34ac] to-[#311960] md:px-[18px] px-[14px] md:py-2 py-1 text-nowrap text-white text-[18px] rounded-3xl font-folio md:font-medium transition-all duration-500 ease-in-out overflow-hidden group">
                         <span className="absolute top-0 -left-[150%] w-[5px] h-full bg-white opacity-30 group-hover:left-[150%] transition-all duration-500"></span>
                         <span className="absolute inset-0 bg-gradient-to-r from-[#311960] via-[#5c34ac] to-[#956ae9] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
                         <span className="relative z-10 md:text-xl">
@@ -155,7 +155,7 @@ function ContactSection() {
                 <div>
                   <p className="text-gray-300 md:text-[18px]">Phone</p>
                   <a
-                    className="text-white lg:text-2xl sm:text-xl text-[18px]  font-sans font-medium hover:text-[#7043b3] duration-300"
+                    className="text-white lg:text-2xl sm:text-xl text-[18px] font-medium hover:text-[#7043b3] duration-300"
                     href="tel:+917678611694"
                   >
                     +917678611694
@@ -169,7 +169,7 @@ function ContactSection() {
                 <div>
                   <p className="text-gray-300 md:text-[18px]">Email</p>
                   <a
-                    className="text-white lg:text-2xl sm:text-xl text-[18px] font-sans font-medium hover:text-[#7043b3] duration-300"
+                    className="text-white lg:text-2xl sm:text-xl text-[18px] font-medium hover:text-[#7043b3] duration-300"
                     href="mailto:vipin70kr@gmail.com"
                   >
                     vipin70kr@gmail.com
@@ -183,7 +183,7 @@ function ContactSection() {
                 <div>
                   <p className="text-gray-300 md:text-[18px]">Address</p>
                   <a
-                    className="text-white lg:text-2xl sm:text-xl text-[18px] font-sans font-medium hover:text-[#7043b3] duration-300"
+                    className="text-white lg:text-2xl sm:text-xl text-[18px] font-medium hover:text-[#7043b3] duration-300"
                     href="https://www.google.com/maps?q=48.8584,2.2945"
                     target="_blank"
                   >

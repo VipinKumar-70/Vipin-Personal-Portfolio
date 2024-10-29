@@ -77,9 +77,7 @@ export const useScrollReveal = (scrollRefs, animationProperties) => {
           trigger: scrollElements[0],
           start: "top 70%",
           end: "bottom 20%",
-          // markers: true,
           toggleActions: "play none none none",
-          // scrub: true,
           ...animationProperties.scrollTrigger,
         },
       });

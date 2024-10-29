@@ -36,7 +36,7 @@ function ResumeSection() {
 
   return (
     <Element name="resume">
-      <section className="bg-[#050709] w-full mx-auto lg:px-16 px-4 py-6 text-gray-300 font-sans">
+      <section className="bg-[#050709] w-full mx-auto lg:px-16 px-4 py-6 text-gray-300 font-folio">
         <div className="max-w-[1370px] w-full py-20 flex md:justify-between flex-wrap gap-y-12 md:px-10 lg:px-0">
           {/* Experience Section */}
           <div
