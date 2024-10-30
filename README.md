@@ -28,9 +28,11 @@ This portfolio utilizes **GSAP (GreenSock Animation Platform)** to enhance the u
 
 ## 📸 Screenshots
 
-<!-- ![Portfolio Screenshot](link-to-your-screenshot) Replace with actual image link -->
-
-![Portfolio Screenshot](./assets/portfolio.png)
+![home](https://github.com/user-attachments/assets/8ec5c67b-58db-42db-a02a-65398beba094)
+![resume](https://github.com/user-attachments/assets/19024145-81cb-480a-8e06-7884dbe68afd)
+![skills](https://github.com/user-attachments/assets/d438bc12-c3d2-4ab1-b85e-2a2965928ed4)
+![projects](https://github.com/user-attachments/assets/010f4218-5531-449e-9921-c6fc7a13845d)
+![contact](https://github.com/user-attachments/assets/2e7000db-a867-48c6-8ec1-c1fefca53625)
 
 ## 🔧 Installation Instructions
 
@@ -67,4 +69,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ### Contact
 
 If you have any questions or need further assistance, please don't hesitate to contact me at
-[Vipin Kumar](mailto:vk20140074250@gmail.com). I'll be happy to help!
+[Vipin Kumar](mailto:vipin70kr@gmail.com). I'll be happy to help!
