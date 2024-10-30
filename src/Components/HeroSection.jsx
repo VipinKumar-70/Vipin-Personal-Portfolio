@@ -23,7 +23,7 @@ function HeroSection() {
         className="fixed top-0 left-0 p-4 m-2 bg-[#6941a591] rounded-full pointer-events-none z-50 hidden lg:block"
       ></div>
 
-      <section className="w-full mx-auto lg:px-20 px-4 py-6 text-white bg-gradient-to-r from-[#0f0715] via-[#0f0715] to-[#221338]">
+      <section className="w-full mx-auto lg:px-20 px-4 py-40 text-white bg-gradient-to-r from-[#0f0715] via-[#0f0715] to-[#221338]">
         <div className="max-w-[1370px] w-full py-8 flex md:justify-between justify-center gap-y-4 items-center md:px-10 lg:px-0">
           <div
             className="lg:w-[50%] w-full md:px-0 px-10 flex flex-col lg:gap-4 md:gap-3"

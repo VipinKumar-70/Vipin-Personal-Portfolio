@@ -21,8 +21,8 @@ function Header() {
   return (
     <>
       <Element name="home">
-        <header className="w-full mx-auto lg:px-10 md:px-8 px-4 py-2 bg-gradient-to-r from-[#0f0715] via-[#0f0715] to-[#221338]">
-          <nav className="max-w-[1370px] py-8 flex justify-between items-center">
+        <header className="w-full mx-auto lg:px-10 md:px-8 px-4 py-4 bg-gradient-to-r from-[#0f0715] via-[#0f0715] to-[#221338] fixed z-10">
+          <nav className="max-w-[1370px] flex justify-between items-center">
             <div className="flex items-center">
               <a href="/" className="flex items-center">
                 <img
