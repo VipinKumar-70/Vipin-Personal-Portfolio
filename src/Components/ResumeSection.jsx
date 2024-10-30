@@ -3,7 +3,6 @@ import { FaAward } from "react-icons/fa6";
 import { FaGraduationCap } from "react-icons/fa";
 import { Element } from "react-scroll";
 import { useScrollReveal } from "../GSAPManager";
-import gsap from "gsap";
 
 function Card({ year, title, place }) {
   return (

@@ -1,11 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
 import photo from "../assets/photo.png";
-import { Element } from "react-scroll";
 import { cursorAnimation, HeroAnimation } from "../GSAPManager";
 
 function HeroSection() {
@@ -21,7 +20,7 @@ function HeroSection() {
     <>
       <div
         ref={cursorRef}
-        className="fixed top-0 left-0 p-4 m-2 bg-[#6941a591] rounded-full pointer-events-none z-50 hidden md:block"
+        className="fixed top-0 left-0 p-4 m-2 bg-[#6941a591] rounded-full pointer-events-none z-50 hidden lg:block"
       ></div>
 
       <section className="w-full mx-auto lg:px-20 px-4 py-6 text-white bg-gradient-to-r from-[#0f0715] via-[#0f0715] to-[#221338]">
@@ -54,31 +53,31 @@ function HeroSection() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <button className="flex items-center px-6 text-[18px] text-[#7937db] border-[#7937db] border-solid border-2 py-2 rounded-3xl hover:text-white hover:bg-[#7937db] duration-300 font-folio">
+                <button className="flex items-center px-6 text-[18px] text-[#7937db] border-[#7937db] border-solid border-2 py-2 rounded-3xl hover:text-gray-300 hover:bg-[#7937db] duration-300 font-folio">
                   Download CV
                   <MdOutlineFileDownload className="text-2xl ml-1 " />
                 </button>
               </a>
               <div className="flex lg:gap-2 md:gap-3 gap-4">
                 <a href="" target="_blank" rel="noopener noreferrer">
-                  <FaFacebookF className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-white hover:bg-[#7937db] duration-300"></FaFacebookF>
+                  <FaFacebookF className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-gray-300 hover:bg-[#7937db] duration-300"></FaFacebookF>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/vipinkumar70/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedinIn className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-white hover:bg-[#7937db] duration-300"></FaLinkedinIn>
+                  <FaLinkedinIn className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-gray-300 hover:bg-[#7937db] duration-300"></FaLinkedinIn>
                 </a>
                 <a href="" target="_blank" rel="noopener noreferrer">
-                  <FaDribbble className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-white hover:bg-[#7937db] duration-300"></FaDribbble>
+                  <FaDribbble className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-gray-300 hover:bg-[#7937db] duration-300"></FaDribbble>
                 </a>
                 <a
                   href="https://github.com/VipinKumar-70"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-white hover:bg-[#7937db] duration-300"></FaGithub>
+                  <FaGithub className="text-[35px] text-[#7937db] border-2 border-[#7937db] rounded-3xl p-2 hover:text-gray-300 hover:bg-[#7937db] duration-300"></FaGithub>
                 </a>
               </div>
             </div>

@@ -3,7 +3,7 @@ import portfolio from "../assets/portfolio.png";
 import { Element } from "react-scroll";
 import { useScrollReveal } from "../GSAPManager";
 
-function ProjectCard({ projectImg, cardRef }) {
+function ProjectCard({ projectImg, cardRef, linkRef }) {
   return (
     <div
       ref={cardRef}
@@ -15,8 +15,8 @@ function ProjectCard({ projectImg, cardRef }) {
         alt=""
       />
       <div className="bg-[#8844c776] w-full h-full rounded-2xl p-2 absolute z-10 bottom-0 opacity-0 group-hover:opacity-100 duration-300 ease-in grid place-content-center backdrop-blur-md">
-        <a href="#">
-          <button className="text-3xl text-gray-700 font-bold p-4 px-6 bg-white rounded-2xl">
+        <a href={linkRef} target="_blank">
+          <button className="md:text-2xl text-xl text-gray-700 font-bold md:p-3 p-1 md:px-5 px-2 bg-gray-300 rounded-2xl">
             Preview
           </button>
         </a>
@@ -61,6 +61,7 @@ function ProjectSection() {
                     key={index}
                     projectImg={portfolio}
                     cardRef={boxRef}
+                    linkRef=""
                   />
                 ))}
               </div>

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import reactLogo from "../assets/logo.png";
-import { Link, Element, animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { useScrollReveal } from "../GSAPManager";
 
 function Footer() {
@@ -44,7 +44,7 @@ function Footer() {
               )}
             </ul>
             <button
-              class="hidden md:block fixed bottom-10 right-4 cursor-pointer bg-[#311960] px-3 py-2 rounded-md text-gray-200 tracking-wider shadow-xl animate-bounce hover:animate-none"
+              class="hidden lg:block fixed bottom-10 right-4 cursor-pointer bg-[#311960] px-3 py-2 rounded-md text-gray-200 tracking-wider shadow-xl animate-bounce hover:animate-none"
               onClick={() => scroll.scrollToTop()}
             >
               <svg
