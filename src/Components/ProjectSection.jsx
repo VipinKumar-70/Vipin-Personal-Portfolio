@@ -29,10 +29,10 @@ function ProjectSection() {
   const projectBoxes = useRef([]);
 
   const projectData = [
-    { img: portfolio },
-    { img: netflix },
-    { img: cohere },
-    { img: cohere },
+    { img: portfolio, link: "/" },
+    { img: netflix, link: "https://tailwind-netflix-clone.vercel.app/" },
+    { img: cohere, link: "https://cohere-clone.vercel.app/" },
+    { img: cohere, link: "https://cohere-clone.vercel.app/" },
   ];
 
   projectBoxes.current = projectData.map(
